@@ -263,7 +263,8 @@ Team Lead —
 - Testing and debugging
 - GitHub repository management
 - Demo video creation
-- Final project integration |
+- Final project integration
+- Created and organized approximately half of the project PDF reports |
 - github userid [@shilpasingh89q69-dottie](https://github.com/shilpasingh89q69-dottie) |
  
 | **Chanchal Patani** |
