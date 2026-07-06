@@ -24,7 +24,6 @@ LaunchPad AI turns a short description of your startup idea into a structured, d
 - [Public Deployment via Ngrok](#-public-deployment-via-ngrok)
 - [API Reference](#-api-reference)
 - [Database Schema](#-database-schema)
-- [Screenshots](#-screenshots)
 - [Team](#-team)
 - [Acknowledgements](#-acknowledgements)
 - [License](#-license)
