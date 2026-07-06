@@ -254,22 +254,6 @@ Single-table schema (`startup_reports`):
 
 ---
 
-## 🖼 Screenshots
-
-**Startup Input Form**
-
-![Input Form](docs/screenshots/input-form.jpg)
-
-**Results Dashboard — Viability, Innovation & SWOT**
-
-![Results Dashboard](docs/screenshots/results-dashboard.jpg)
-
-**Recommendations — Market Insights & Growth Strategy**
-
-![Recommendations](docs/screenshots/recommendations.jpg)
-
----
-
 ## 👥 Team
 
 | Name | Role | GitHub |
