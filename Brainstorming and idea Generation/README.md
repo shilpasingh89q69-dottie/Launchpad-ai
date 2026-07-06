@@ -1,3 +1,1 @@
-Brainstorming and Ideas Polarization
-Define Problem Statement
-Empathy Map
+1 Brainstorming and Ideas generation
