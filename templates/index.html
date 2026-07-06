@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchPad AI &mdash; Startup Analysis Engine</title>
+
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <nav class="navbar navbar-launchpad navbar-dark mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="/">🚀 LaunchPad<span>AI</span></a>
+      <span class="text-white-50 small d-none d-sm-block">Startup Viability & Strategy Engine</span>
+    </div>
+  </nav>
+
+  <div class="container pb-5">
+
+    <!-- Alert Box -->
+    <div id="alert-box" class="alert" role="alert"></div>
+
+    <!-- Input Form -->
+    <div class="lp-card">
+      <h5>Describe Your Startup</h5>
+      <form id="startup-form" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="startup_name">Startup Name</label>
+            <input type="text" class="form-control" id="startup_name" maxlength="{{ max_length }}" required />
+            <span class="char-counter" id="startup_name-counter">0 / {{ max_length }}</span>
+          </div>
+          <div class="col-md-6">
+            <label for="target_audience">Target Audience</label>
+            <input type="text" class="form-control" id="target_audience" maxlength="{{ max_length }}" required />
+            <span class="char-counter" id="target_audience-counter">0 / {{ max_length }}</span>
+          </div>
+          <div class="col-12">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" rows="4" maxlength="{{ max_length }}" required></textarea>
+            <span class="char-counter" id="description-counter">0 / {{ max_length }}</span>
+          </div>
+          <div class="col-12">
+            <label for="business_model">Business Model</label>
+            <textarea class="form-control" id="business_model" rows="3" maxlength="{{ max_length }}" required></textarea>
+            <span class="char-counter" id="business_model-counter">0 / {{ max_length }}</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between mt-4">
+          <button type="submit" class="btn btn-launch" id="submit-btn">Launch Analysis</button>
+          <div id="processing-state">
+            <div class="spinner-lp"></div>
+            <span>Processing your analysis...</span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results-section">
+
+      <!-- Startup Analytics Card -->
+      <div class="lp-card">
+        <h5>Startup Analytics <small class="text-muted" id="analytics-startup-name"></small></h5>
+        <div class="row">
+          <div class="col-6">
+            <div class="score-block">
+              <div class="score-value score-viability" id="viability-score">--</div>
+              <div class="score-label">Viability Score</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="score-block">
+              <div class="score-value score-innovation" id="innovation-score">--</div>
+              <div class="score-label">Innovation Score</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SWOT Report Card -->
+      <div class="lp-card">
+        <h5>SWOT Report</h5>
+        <div class="swot-grid">
+          <div class="swot-box swot-strengths">
+            <h6>💪 Strengths</h6>
+            <ul id="swot-strengths-list"></ul>
+          </div>
+          <div class="swot-box swot-weaknesses">
+            <h6>⚠️ Weaknesses</h6>
+            <ul id="swot-weaknesses-list"></ul>
+          </div>
+          <div class="swot-box swot-opportunities">
+            <h6>🌱 Opportunities</h6>
+            <ul id="swot-opportunities-list"></ul>
+          </div>
+          <div class="swot-box swot-threats">
+            <h6>🔥 Threats</h6>
+            <ul id="swot-threats-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommendations Card -->
+      <div class="lp-card">
+        <h5>Recommendations</h5>
+        <h6 class="mt-3">Market Insights</h6>
+        <p id="market-insights-text" class="text-muted"></p>
+        <h6 class="mt-3">Growth Strategy</h6>
+        <p id="growth-strategy-text" class="text-muted"></p>
+      </div>
+
+    </div>
+
+    <!-- History Card -->
+    <div class="lp-card">
+      <h5>Recent Reports</h5>
+      <div id="history-list">
+        <p class="text-muted small mb-0">Loading history...</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    window.LP_MAX_LENGTH = {{ max_length }};
+  </script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
