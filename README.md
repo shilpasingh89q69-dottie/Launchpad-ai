@@ -270,6 +270,7 @@ Team Lead —
 | **Chanchal Patani** |
 
 - Co-prepared the project documentation.
+- project documetation cintributor and analysis.
 - Assisted in compiling project documentation.
 - Created and organized approximately half of the project PDF reports.
 - Assisted in compiling project documentation. |
