@@ -268,9 +268,8 @@ Team Lead —
  
 | **Chanchal Patani** |
 
- - Co-prepared the project documentation.
-- Created and organized approximately half of the project PDF reports.
-- Assisted in compiling project documentation.- Co-prepared the project documentation.
+- Co-prepared the project documentation.
+- Assisted in compiling project documentation.
 - Created and organized approximately half of the project PDF reports.
 - Assisted in compiling project documentation. |
 - github userid [@Chanchalpatni302-bit](https://github.com/Chanchalpatni302-bit) |
