@@ -255,16 +255,19 @@ Single-table schema (`startup_reports`):
 
 ## 👥 Team
 
-| Name | Role | GitHub |
-|---|---|---|
-| **Shilpa Kumari** | Team Lead — - Project concept and planning
+| **Shilpa Kumari** |
+Team Lead —
+- Project concept and planning
 - Frontend and backend development
 - API integration
 - Testing and debugging
 - GitHub repository management
 - Demo video creation
 - Final project integration | [@shilpasingh89q69-dottie](https://github.com/shilpasingh89q69-dottie) |
-| **Chanchal Patani** | - Co-prepared the project documentation.
+- 
+| **Chanchal Patani** |
+
+ - Co-prepared the project documentation.
 - Created and organized approximately half of the project PDF reports.
 - Assisted in compiling project documentation.- Co-prepared the project documentation.
 - Created and organized approximately half of the project PDF reports.
