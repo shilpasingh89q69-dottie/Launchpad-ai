@@ -1,6 +1,6 @@
 # LaunchPad AI
 
-An AI-powered startup analysis tool. Enter your startup's name, description, target audience, and business model — it returns a viability score, innovation score, SWOT report, and growth recommendations using Google Gemini 1.5 Flash.
+An AI-powered startup analysis tool. Enter your startup's name, description, target audience, and business model — it returns a viability score, innovation score, SWOT report, and growth recommendations using Google Gemini api key and ngrok autotoken.
 
 #  LaunchPad AI
 
