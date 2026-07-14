@@ -230,6 +230,9 @@ Share the **Public** URL with anyone to let them access your running instance di
   }
 }
 ```
+## 🎥 Demo Project Video
+
+[Watch the video](https://youtu.be/YsTFeSHNZYA?si=cQPSG-K8Kb3LpWpO)
 
 ---
 
